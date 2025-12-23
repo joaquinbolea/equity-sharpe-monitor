@@ -1,0 +1,9 @@
+{
+  "asof": "demo",
+  "rows": [
+    {"ticker":"AAPL.OQ","sharpe_3m":1.2,"sharpe_2a":0.8,"bubble_size":30},
+    {"ticker":"MSFT.OQ","sharpe_3m":0.9,"sharpe_2a":1.1,"bubble_size":34},
+    {"ticker":"NVDA.OQ","sharpe_3m":1.6,"sharpe_2a":1.3,"bubble_size":55},
+    {"ticker":"KO.N","sharpe_3m":0.2,"sharpe_2a":0.4,"bubble_size":18}
+  ]
+}
