@@ -1,1 +1,41 @@
 
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Equity Sharpe Monitor</title>
+  <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+  <style>
+    body { margin:0; background:#0b0f14; color:#e6edf3; font-family: Arial, sans-serif; }
+    .bar { padding:14px 18px; display:flex; gap:12px; align-items:center; }
+    select { background:#111824; color:#e6edf3; border:1px solid #2a3441; padding:6px 8px; border-radius:6px; }
+    #chart { width: 100vw; height: calc(100vh - 56px); }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div><b>Equity Sharpe Monitor — S&P 100</b></div>
+    <div style="margin-left:auto; display:flex; gap:10px;">
+      <label>X (short):
+        <select id="xSel">
+          <option value="sharpe_1m">1M</option>
+          <option value="sharpe_3m" selected>3M</option>
+          <option value="sharpe_6m">6M</option>
+          <option value="sharpe_1a">1A</option>
+        </select>
+      </label>
+      <label>Y (long):
+        <select id="ySel">
+          <option value="sharpe_1a">1A</option>
+          <option value="sharpe_2a" selected>2A</option>
+          <option value="sharpe_3a">3A</option>
+          <option value="sharpe_5a">5A</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <div id="chart"></div>
+  <script src="app.js"></script>
+</body>
+</html>
